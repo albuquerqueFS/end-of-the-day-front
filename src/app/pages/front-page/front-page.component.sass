@@ -1,0 +1,49 @@
+@import '../../../styles/_base'
+@import '../../../styles/_utils'
+
+.page
+  margin: 0px auto
+  max-width: 1300px
+  width: 100%
+  min-height: 100vh
+  height: 100%
+  @include d-flex(column, flex-start, flex-start)
+  align-items: stretch
+  &__logo
+    margin: 0px 20px
+    margin-top: 2rem
+    img
+      height: 4rem
+
+.content
+  @include d-flex(row, space-around, center)
+  margin-top: 10rem
+  > div
+    margin: 0px 20px
+    width: 100%
+    height: 100%
+  .texts
+    @include d-flex(column, space-between, flex-start)
+    height: auto
+    &__title
+      font-family: $title-font
+      font-size: 3.5rem
+      color: $text-dark
+    &__explanation
+      font-family: $general-font
+      font-size: 1rem
+      line-height: 1.5rem
+      color: $text-dark
+    &__cta
+      max-width: 400px
+      border: 0px
+      padding: 1rem 5rem
+      background-color: $primary
+      color: white
+      font-size: 1rem
+      &:hover
+        cursor: pointer
+  .art
+    @include d-flex(column, center, center)
+    &__drawing
+      width: 100%
